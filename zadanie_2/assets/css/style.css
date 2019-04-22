@@ -6,6 +6,12 @@
     font-family: 'roboto';
 }
 
+a
+{
+    color:black;
+    text-decoration: none;
+}
+
 .active
 {
     color:#EC2D6D;
@@ -53,7 +59,7 @@
 
 .nav-container .nav-main-content .nav-list > li
 {
-    margin-top: 20%;
+    margin-top: 25%;
     cursor:pointer;
 }
 
@@ -61,7 +67,7 @@
 {
     position: fixed;
     right:180px;
-    top:230px;
+    top: 240px;
     width:70px;
     height:70px;
     background:#1B509F;
@@ -70,6 +76,27 @@
     display:flex;
     align-items: center;
     justify-content: center;
+}
+
+.nav-container .nav-main-content .nav-list li:nth-child(2) .nav-list-image
+{
+    top:310px;
+    background:#E3DAD3;
+    display:none;
+}
+
+.nav-container .nav-main-content .nav-list li:nth-child(3) .nav-list-image
+{
+    top:380px;
+    background:#E694C0;
+    display:none;
+}
+
+.nav-container .nav-main-content .nav-list li:nth-child(4) .nav-list-image
+{
+    top:450px;
+    background:#1B509F;
+    display:none;
 }
 
 .nav-container .nav-main-content .nav-days
@@ -119,7 +146,7 @@
     color:#EC2D6D;
 }
 
-.page-one
+.home--container
 {
     background: url("../img/Bitmap.png") no-repeat;
     background-size: 95vw 100vh;
@@ -128,7 +155,7 @@
     max-width: 100%;
 }
 
-.page-one .container
+.home--container .home--container__main
 {
     position:absolute;
     top:15%;
@@ -137,13 +164,13 @@
     height:40%;
 }
 
-.page-one .container img
+.home--container .home--container__main img
 {
     width:100%;
     height:100%;
 }
 
-.page-one .container p
+.home--container .home--container__main p
 {
     position:absolute;
     font-weight: 700;
@@ -151,13 +178,13 @@
     font-size:2.8rem;
 }
 
-.page-one .container p:nth-child(2)
+.home--container .home--container__main p:nth-child(2)
 {
     top:12%;
     left:15%;
 }
 
-.page-one .container p:nth-child(3)
+.home--container .home--container__main p:nth-child(3)
 {
     top:30%;
     left:12%;
@@ -167,12 +194,12 @@
     z-index: 1;
 }
 
-.page-one .container p:nth-child(3) span
+.home--container .home--container__main p:nth-child(3) span
 {
     color:#d6d3d3;
 }
 
-.page-one .container p:nth-child(4)
+.home--container .home--container__main p:nth-child(4)
 {
     position: absolute;
     bottom:25%;
@@ -182,7 +209,7 @@
     letter-spacing: -2px;
 }
 
-.page-one .container .rectangle
+.home--container .home--container__main .rectangle
 {
     position:absolute;
     top:34.5%;
@@ -192,7 +219,7 @@
     background: #272125;
 }
 
-.page-two
+.schedule--container
 {
 
     background:#E3DAD3;
@@ -202,7 +229,7 @@
     position:relative;
 }
 
-.page-two .container
+.schedule--container .schedule--container__main
 {
     width:40%;
     height:60%;
@@ -218,7 +245,7 @@
 
 }
 
-.page-two::before
+.schedule--container::before
 {
     content:'';
     position:absolute;
@@ -229,7 +256,7 @@
     background: black;
 }
 
-.page-two::after
+.schedule--container::after
 {
     content:'';
     position:absolute;
@@ -242,7 +269,7 @@
     
 }
 
-.page-two .container .container-left-side
+.schedule--container .schedule--container__main .container-left-side
 {   
     position:absolute;
     top:10%;
@@ -250,75 +277,75 @@
 
 }
 
-.page-two .container .container-left-side p
+.schedule--container .schedule--container__main .container-left-side p
 {
     margin-top:40px;
     position:relative;
 }
 
-.page-two .container .container-right-side
+.schedule--container .schedule--container__main .container-right-side
 {
     position:absolute;
     top:14%;
     right:-40px;
 }
 
-.page-two .container .container-right-side p
+.schedule--container .schedule--container__main .container-right-side p
 {
     margin-top:22px;
     position:relative;
 }
 
-.page-two .container .container-left-side p::after
+.schedule--container .schedule--container__main .container-left-side p::after
 {
     position:absolute;
     right:-40px;
     top:-7px;
 }
 
-.page-two .container .container-left-side p:nth-child(1)::after
+.schedule--container .schedule--container__main .container-left-side p:nth-child(1)::after
 {
     content:'_ _ _ _ _ _ _ _ _ _ _ _ _ _ _';
 }
 
-.page-two .container .container-left-side p:nth-child(2)::after
+.schedule--container .schedule--container__main .container-left-side p:nth-child(2)::after
 {
     content:'_ _ _';
 }
 
-.page-two .container .container-left-side p:nth-child(3)::after
+.schedule--container .schedule--container__main .container-left-side p:nth-child(3)::after
 {
     content:'_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _';
 }
 
-.page-two .container .container-left-side p:nth-child(4)::after
+.schedule--container .schedule--container__main .container-left-side p:nth-child(4)::after
 {
     content:'_ _ _';
 }
 
-.page-two .container .container-left-side p:nth-child(5)::after
+.schedule--container .schedule--container__main .container-left-side p:nth-child(5)::after
 {
     content:'_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _';
 }
 
-.page-two .container .container-left-side span
+.schedule--container .schedule--container__main .container-left-side span
 {
     color:#EE2F6E;
 }
 
-.page-two .container .container-right-side span
+.schedule--container .schedule--container__main .container-right-side span
 {
     font-size:50px;
     color:#EC2D6D;
 }
 
-.page-two .container img
+.schedule--container .schedule--container__main img
 {
     width: 100px;
     height: 100px;
 }
 
-.page-two .container .player
+.schedule--container .schedule--container__main .player
 {
     position:absolute;
     top:20%;
@@ -326,14 +353,14 @@
     z-index:1;
 }
 
-.page-two .container .pizza
+.schedule--container .schedule--container__main .pizza
 {
     position:absolute;
     bottom:-80px;
     left:30%;
 }
 
-.page-two .container .pink-rhomb
+.schedule--container .schedule--container__main .pink-rhomb
 {
     position:absolute;
     top:25%;
@@ -345,7 +372,7 @@
 
 }
 
-.page-two .container .pink-rhomb::after
+.schedule--container .schedule--container__main .pink-rhomb::after
 {
     content:'';
     position:absolute;
@@ -357,7 +384,7 @@
     transform: rotate(180deg) skew(-5deg);
 }
 
-.page-two .container .blue-rhomb
+.schedule--container .schedule--container__main .blue-rhomb
 {
     position:absolute;
     bottom:23%;
@@ -367,7 +394,7 @@
     height:60px;
 }
 
-.page-two .container .blue-rhomb::after
+.schedule--container .schedule--container__main .blue-rhomb::after
 {
     content:'';
     position: absolute;
@@ -378,7 +405,7 @@
     
 }
 
-.page-three
+.speakers--container
 {
     background: #E694C0;
     width:100vw;
@@ -387,7 +414,7 @@
     position: relative;
 }
 
-.page-three::after
+.speakers--container::after
 {
     content:'';
     width:2px;
@@ -398,21 +425,21 @@
     left:12%;
 }
 
-.page-three .container
+.speakers--container .speakers--container__main
 {
     width:80%;
     height: 100%;
     position: relative;
 }
 
-.page-three .container .container-girl 
+.speakers--container .speakers--container__main .container-girl 
 {
     width:50%;
     height:100%;
     position:relative;
 }
 
-.page-three .container .container-girl img
+.speakers--container .speakers--container__main .container-girl img
 {
     width: 250px;
     height: 70%;
@@ -421,7 +448,7 @@
     right:0;
 }
 
-.page-three .container .container-girl p
+.speakers--container .speakers--container__main .container-girl p
 {
     position: absolute;
     color: #272125;
@@ -429,32 +456,32 @@
     font-family: 'lato';
 }
 
-.page-three .container .container-girl p:nth-child(2)
+.speakers--container .speakers--container__main .container-girl p:nth-child(2)
 {
     top:20%;
     font-size:3rem;
     letter-spacing: -2px;
 }
 
-.page-three .container .container-girl p:nth-child(3)
+.speakers--container .speakers--container__main .container-girl p:nth-child(3)
 {
     top:30%;
     font-size:7rem;
 }
 
-.page-three .container .container-girl p:nth-child(4)
+.speakers--container .speakers--container__main .container-girl p:nth-child(4)
 {
     top: 50%;
     font-size: 1.5rem;
 }
 
-.page-three .container .container-girl p:nth-child(5)
+.speakers--container .speakers--container__main .container-girl p:nth-child(5)
 {
     top: 54%;
     font-size: 1.5rem;
 }
 
-.page-three .container .container-boy 
+.speakers--container .speakers--container__main .container-boy 
 {
     width:50%;
     height:100%;
@@ -463,7 +490,7 @@
     right:0;
 }
 
-.page-three .container .container-boy img
+.speakers--container .speakers--container__main .container-boy img
 {
     width: 250px;
     height: 72%;
@@ -472,7 +499,7 @@
     left:15%;
 }
 
-.page-three .container .container-boy p
+.speakers--container .speakers--container__main .container-boy p
 {
     position: absolute;
     color:white;
@@ -480,32 +507,32 @@
     font-family: 'lato';
 }
 
-.page-three .container .container-boy p:nth-child(2)
+.speakers--container .speakers--container__main .container-boy p:nth-child(2)
 {
     top:45%;
     font-size:1.5rem;
 }
 
-.page-three .container .container-boy p:nth-child(3)
+.speakers--container .speakers--container__main .container-boy p:nth-child(3)
 {
     top:50%;
     font-size:1.5rem;
 }
 
-.page-three .container .container-boy p:nth-child(4)
+.speakers--container .speakers--container__main .container-boy p:nth-child(4)
 {
     top: 55%;
     font-size: 7rem;
 }
 
-.page-three .container .container-boy p:nth-child(5)
+.speakers--container .speakers--container__main .container-boy p:nth-child(5)
 {
     top: 75%;
     font-size: 3rem;
     letter-spacing: -2px;
 }
 
-.page-four
+.location--container
 {
     background: url("../img/bg.svg") no-repeat; 
     background-size: contain;
@@ -515,7 +542,7 @@
     position: relative;
 }
 
-.page-four .main-content-container
+.location--container .main-content-container
 {
     position:absolute;
     background: #272125;
@@ -528,7 +555,7 @@
     z-index: 1;
 }
 
-.page-four .main-content-container .main-content-square
+.location--container .main-content-container .main-content-square
 {
     width:90%;
     height:90%;
@@ -541,30 +568,30 @@
     text-align: center;
 }
 
-.page-four .main-content-container .main-content-square p:nth-child(1)
+.location--container .main-content-container .main-content-square p:nth-child(1)
 {
     font-size:3rem;
     margin:15% 0 2% 0;
     font-weight: 700;
 }
 
-.page-four .main-content-container .main-content-square p:nth-child(2)
+.location--container .main-content-container .main-content-square p:nth-child(2)
 {
     letter-spacing: 1px;
 }
 
-.page-four .main-content-container .main-content-square p:nth-child(3)
+.location--container .main-content-container .main-content-square p:nth-child(3)
 {
     margin: 10% 0 0 0;
     letter-spacing: 1px;
 }
 
-.page-four .main-content-container .main-content-square p:nth-child(4)
+.location--container .main-content-container .main-content-square p:nth-child(4)
 {
     letter-spacing: 1px;
 }
 
-.page-four .main-content-container .main-content-square p:nth-child(5)
+.location--container .main-content-container .main-content-square p:nth-child(5)
 {
     margin: 20% 0 0 0;
     color:#EE2F6E;
@@ -572,14 +599,14 @@
     font-weight: 700;
 }
 
-.page-four .train
+.location--container .train
 {
     position:absolute;
     top: 5%;
     right:45%;
 }
 
-.page-four .train .train-description
+.location--container .train .train-description
 {
     position:absolute;
     top:0;
@@ -588,20 +615,20 @@
     font-weight: 700;   
 }
 
-.page-four .dribble
+.location--container .dribble
 {
     position: absolute;
     right:26%;
     top:32%;
 }
 
-.page-four .dribble img
+.location--container .dribble img
 {
     width:80%;
     height: 80%;
 }
 
-.page-four .dribble .dribble-description
+.location--container .dribble .dribble-description
 {
     position: absolute;
     top:-90%;
@@ -611,7 +638,7 @@
     font-weight: 700;
 }
 
-.page-four .bridge
+.location--container .bridge
 {
     position:absolute;
     top:46%;
@@ -619,7 +646,7 @@
     text-align:right;
 }
 
-.page-four .bridge .bridge-description
+.location--container .bridge .bridge-description
 {
     position:absolute;
     top:-13%;
@@ -628,14 +655,14 @@
     font-weight: 700;
 }
 
-.page-four .monument
+.location--container .monument
 {
     position:absolute;
     left:2%;
     bottom:20%;
 }
 
-.page-four .monument .monument-description
+.location--container .monument .monument-description
 {
     position:absolute;
     bottom:0;

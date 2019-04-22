@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="assets/fontello/css/html.css" rel="stylesheet"> 
-    
 </head>
 <body>
     <main>
@@ -20,11 +19,10 @@
                 </div>
                 <div class="nav-main-content">
                     <ul class="nav-list">
-                        <li class="active"><div class="nav-list-image"><img src="assets/img/basket.svg" alt="basket"></div>HOME
-                        </li>
-                        <li>SCHEDULE</li>
-                        <li>SPEAKERS</li>
-                        <li>LOCATION</li>
+                        <li class="active" id="nav_home"><div class="nav-list-image"><img src="assets/img/basket.svg" alt="basket"></div>HOME</li>
+                        <li id="nav_schedule"><div class="nav-list-image"><img src="assets/img/watches.svg" alt="basket"></div>SCHEDULE</li>
+                        <li id="nav_speakers"><div class="nav-list-image"><img src="assets/img/t-shirt.svg" alt="basket"></div>SPEAKERS</li>
+                        <li id="nav_location"><div class="nav-list-image"><img src="assets/img/court.svg" alt="basket"></div>LOCATION</li>
                     </ul>
                     <div class="nav-days">
                         <h1>51</h1>
@@ -42,103 +40,105 @@
                 </div>
             </div>
         </nav>
-
-        <article class="page-one">
-            <div class="container">
-                <img src="assets/img/Rectangle.svg" alt="rectangle">
-                <p>HI, DRIBBBLERS!</p>
-                <p>13 DEC <span>2018</span></p>
-                <p>RZESZÓW MEETUP</p>
-                <div class="rectangle"></div>
-            </div>
-           
-        </article>
-
-        <article class="page-two">
-            <div class="container">
-                <div class="container-left-side">
-                    <p>Best Dribble shot contest</p>
-
-                    <p><span>Leta Sobierajski:</span> Creative side of interfaces</p>
-                
-                    <p>Playboard game</p>
-                
-                    <p><span>Gleb Kuznetsov: </span> Design interactions uptade</p>
-                
-                    <p>Pizza time</p>
-                </div>
-                <div class="container-right-side">
-                    <p>18:00</p>
-                    <p><span>18:30</span></p>
-                    <p>19:00</p>
-                    <p><span>19:30</span></p>
-                    <p>20:00</p>
-                </div>
-                <img class="player" src="assets/img/player.svg" alt="player">
-                <img class="pizza" src="assets/img/pizza.svg" alt="pizza">
-                <div class="pink-rhomb"></div>
-                <div class="blue-rhomb"></div>
-            </div>
-        </article>
-
-        <article class="page-three">
-            <div class="container">
-                <div class="container-girl">
-                    <img src="assets/img/girl.svg" alt="leta sobierajski">
-                    <p>LETA SOBIERAJSKI</p>
-                    <p>01</p>
-                    <p>Designer &</p>
-                    <p>Art Director</p>
-                </div>
-                <div class="container-boy">
-                    <img src="assets/img/boy.svg" alt="gleb kuznetsov">
-                    <p>Chief</p>
-                    <p>Design Officer</p>
-                    <p>02</p>
-                    <p>GLEB KUZNETSOV</p>
+        <section>
+            <div class="home--container" id="home">
+                <div class="home--container__main">
+                    <img src="assets/img/Rectangle.svg" alt="rectangle">
+                    <p>HI, DRIBBBLERS!</p>
+                    <p>13 DEC <span>2018</span></p>
+                    <p>RZESZÓW MEETUP</p>
+                    <div class="rectangle"></div>
                 </div>
             </div>
-        </article>
-        <article class="page-four">
-            <div class="main-content-container">
-                <div class="main-content-square">
+        </section>
+        <section>
+            <div class="schedule--container" id="schedule">
+                <div class="schedule--container__main">
+                    <div class="container-left-side">
+                        <p>Best Dribble shot contest</p>
+                        <p><span>Leta Sobierajski:</span> Creative side of interfaces</p>
+                        <p>Playboard game</p>
+                        <p><span>Gleb Kuznetsov: </span> Design interactions uptade</p>
+                        <p>Pizza time</p>
+                    </div>
+                    <div class="container-right-side">
+                        <p>18:00</p>
+                        <p><span>18:30</span></p>
+                        <p>19:00</p>
+                        <p><span>19:30</span></p>
+                        <p>20:00</p>
+                    </div>
+                    <img class="player" src="assets/img/player.svg" alt="player">
+                    <img class="pizza" src="assets/img/pizza.svg" alt="pizza">
+                    <div class="pink-rhomb"></div>
+                    <div class="blue-rhomb"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="speakers--container" id="speakers">
+                <div class="speakers--container__main">
+                    <div class="container-girl">
+                        <img src="assets/img/girl.svg" alt="leta sobierajski">
+                        <p>LETA SOBIERAJSKI</p>
+                        <p>01</p>
+                        <p>Designer &</p>
+                        <p>Art Director</p>
+                    </div>
+                    <div class="container-boy">
+                        <img src="assets/img/boy.svg" alt="gleb kuznetsov">
+                        <p>Chief</p>
+                        <p>Design Officer</p>
+                        <p>02</p>
+                        <p>GLEB KUZNETSOV</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="location--container" id="location">
+                <div class="main-content-container">
+                    <div class="main-content-square">
                         <p>KWADRAT</p>
                         <p>Podkarpacka Przestrzeń Kreatywna</p>
                         <p>Piotra Bardowskiego 4</p>
                         <p>35-005 Rzeszów</p>
                         <p>START 18:00</p>
+                    </div>
+                </div>
+                <div class="train">
+                    <img src="assets/img/train.svg" alt="train">
+                    <div class="train-description">
+                        <p>Rzeszów</p>
+                        <p>Główny</p>
+                        <p>PKP</p>
+                    </div>             
+                </div>
+                <div class="dribble">
+                    <img src="assets/img/dribble.svg" alt="dribble">
+                    <div class="dribble-description">
+                        <p>KWADRAT -</p>
+                        <p>Podkarpacka Przestrzeń</p>
+                        <p>Kreatywna</p>
+                    </div>
+                </div>
+                <div class="bridge">
+                    <img src="assets/img/bridge.svg" alt="bridge">
+                    <div class="bridge-description">
+                        <p>Okrągła kładka</p>
+                        <p>dla pieszych</p>
+                    </div>
+                </div>
+                <div class="monument">
+                    <img src="assets/img/monument.svg" alt="monumet">
+                    <div class="monument-description">
+                        <p>Pomnik Czynu</p>
+                        <p>Rewolucyjnego</p>
+                    </div>
                 </div>
             </div>
-            <div class="train">
-                <img src="assets/img/train.svg" alt="train">
-                <div class="train-description">
-                    <p>Rzeszów</p>
-                    <p>Główny</p>
-                    <p>PKP</p>
-                </div>             
-            </div>
-            <div class="dribble">
-                <img src="assets/img/dribble.svg" alt="dribble">
-                <div class="dribble-description">
-                    <p>KWADRAT -</p>
-                    <p>Podkarpacka Przestrzeń</p>
-                    <p>Kreatywna</p>
-                </div>
-            </div>
-            <div class="bridge">
-                <img src="assets/img/bridge.svg" alt="bridge">
-                <div class="bridge-description">
-                    <p>Okrągła kładka</p>
-                    <p>dla pieszych</p>
-                </div>
-            </div>
-            <div class="monument">
-                <img src="assets/img/monument.svg" alt="monumet">
-                <div class="monument-description">
-                    <p>Pomnik Czynu</p>
-                    <p>Rewolucyjnego</p>
-                </div>
-         </article>
+         </section>
     </main>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
